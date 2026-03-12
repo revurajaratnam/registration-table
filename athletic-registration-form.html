@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>webtables</title>
+</head>
+<body>
+    <style>
+        body{
+            background: linear-gradient(rgb(41, 135, 167),darkblue);
+            width: 700px;
+            height: 700px;
+        }
+        th,td{
+            width: 200px;
+            
+           
+        }
+        th{
+            background-color:#d0d0ff;
+            text-align: center;
+        }
+        #submit{
+            text-align: center;
+        }
+        
+    </style>
+    <table border="2px" align="center">
+        <form>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"> Sex</td>
+                <td><input type="radio" name="gender" value="male"> Male</td>
+            </tr>
+            <tr> <td><input type="radio" name="gender" value="female">Female</td></tr>
+            <tr>
+                <td>Eye Color</td> 
+                <td><select>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option selected>Blue</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Check all that apply</td>
+                <td><input type="checkbox"> Over 6 feet tall</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> 6 200 pounds</td>
+            </tr>
+            <!-- Only This part ill use gemini -->
+            <tr>
+                <td colspan="2">Describe your athletic abilit: <br>
+                    <textarea rows="4" style="width:98%"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="submit"> <input type="submit" value= "Enter my information"></td>
+            </tr>
+        </form>
+    </table>
+    </body>
+</html>
